@@ -192,7 +192,7 @@ header .titleSection nav a {
   text-decoration: none;
 }
 header .subTitleSection {
-  margin-top: 180px;
+  margin-top: 80px;
   text-align: center;
   vertical-align: center;
   align-items: center;
@@ -204,6 +204,13 @@ header .subTitleSection .titleButton {
   background-color: #234099;
   color: #ffffff;
 }
+.copyright {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
+  font-size: 0.75rem;
+  color: grey;
+}
 body {
   text-align: center;
 }
@@ -213,9 +220,4 @@ body h4 {
 }
 body h5 {
   padding-bottom: 50px;
-}
-footer {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 16px;
 }
