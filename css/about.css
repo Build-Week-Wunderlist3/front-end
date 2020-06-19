@@ -146,6 +146,14 @@ h3 {
   font-size: 5rem;
   color: black;
 }
+h4 {
+  font-size: 3rem;
+  color: #696969;
+}
+h5 {
+  font-size: 1.5rem;
+  color: grey;
+}
 a {
   font-size: 2rem;
   color: #234099;
@@ -155,6 +163,17 @@ body {
 }
 .figCaption {
   font-size: 1.5rem;
+}
+footer {
+  font-size: 0.75rem;
+  color: grey;
+}
+.copyright {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
+  font-size: 0.75rem;
+  color: grey;
 }
 .titleSection {
   display: flex;
