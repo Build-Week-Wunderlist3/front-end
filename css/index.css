@@ -218,7 +218,7 @@ header .subTitleSection {
 }
 @media (max-width:500px) {
   header .subTitleSection {
-    margin-top: 260px;
+    margin-top: 275px;
   }
 }
 header .subTitleSection .titleButton {
@@ -243,4 +243,9 @@ body h4 {
 }
 body h5 {
   padding-bottom: 50px;
+}
+@media (max-width:500px) {
+  body img {
+    width: 100%;
+  }
 }
