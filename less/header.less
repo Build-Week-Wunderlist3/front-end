@@ -6,6 +6,10 @@ header {
     background-image: url('/img/wunderlist3-pic-1.jpg');
     background-size: 100% auto;
 
+    @media @mobile {
+        background-size: cover;
+    }
+
     .titleSection {
         display: flex;
         flex-direction: row;
@@ -14,10 +18,21 @@ header {
         margin: 0 20px;
         padding: 20px;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
         nav {
             justify-content: space-evenly;
             align-items: center;
             color: #234099;
+
+            @media @mobile {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                line-height: 0.5;
+            }
 
             a {
                 margin: 10px;
@@ -32,6 +47,10 @@ header {
         vertical-align: center;
         align-items: center;
         justify-content: center;
+
+        @media @mobile {
+            margin-top: 260px;
+        }
 
         .titleButton {
             margin-top: 30px;
