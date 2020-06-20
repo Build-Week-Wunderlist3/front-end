@@ -146,6 +146,11 @@ h3 {
   font-size: 5rem;
   color: black;
 }
+@media (max-width:500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
 h4 {
   font-size: 3rem;
   color: #696969;
@@ -183,10 +188,23 @@ footer {
   margin: 0 20px;
   padding: 20px;
 }
+@media (max-width:500px) {
+  .titleSection {
+    flex-direction: column;
+  }
+}
 .titleSection nav {
   justify-content: space-evenly;
   align-items: center;
   color: #234099;
+}
+@media (max-width:500px) {
+  .titleSection nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 0.5;
+  }
 }
 .titleSection nav a {
   margin: 10px;
@@ -211,11 +229,22 @@ body h2 {
   text-align: center;
   padding: 20px;
 }
+@media (max-width:500px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
 body .teamPartOne {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 50px;
+}
+@media (max-width:500px) {
+  body .teamPartOne {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body .teamPartTwo {
   display: flex;
@@ -223,6 +252,13 @@ body .teamPartTwo {
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (max-width:500px) {
+  body .teamPartTwo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
 }
 body .figCaption {
   display: flex;
