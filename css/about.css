@@ -178,13 +178,6 @@ footer {
   font-size: 0.75rem;
   color: grey;
 }
-.copyright {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 16px;
-  font-size: 0.75rem;
-  color: grey;
-}
 .titleSection {
   display: flex;
   flex-direction: row;
@@ -292,4 +285,11 @@ body .figCaption {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+.copyright {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
+  font-size: 0.75rem;
+  color: grey;
 }
