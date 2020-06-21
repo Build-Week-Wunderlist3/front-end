@@ -184,6 +184,11 @@ header {
     background-size: cover;
   }
 }
+@media (max-width:800px) {
+  header {
+    background-size: cover;
+  }
+}
 header .titleSection {
   display: flex;
   flex-direction: row;
@@ -221,6 +226,11 @@ header .subTitleSection {
   align-items: center;
   justify-content: center;
 }
+@media (max-width:800px) {
+  header .subTitleSection {
+    margin-top: 350px;
+  }
+}
 @media (max-width:500px) {
   header .subTitleSection {
     margin-top: 275px;
@@ -251,6 +261,11 @@ body h5 {
   padding-bottom: 50px;
 }
 @media (max-width:500px) {
+  body img {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
   body img {
     width: 100%;
   }
