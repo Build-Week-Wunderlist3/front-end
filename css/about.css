@@ -133,17 +133,22 @@ table {
 html {
   font-size: 62.5%;
 }
-nav {
+header,
+body,
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+nav,
+h1,
+h2 {
   color: #234099;
 }
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #234099;
 }
 h2 {
   font-size: 4rem;
-  color: #234099;
 }
 h3 {
   font-size: 5rem;
@@ -181,15 +186,15 @@ a {
   color: white;
   background-color: #234099;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-}
 .figCaption {
   font-size: 1.5rem;
 }
 .copyright {
   font-size: 0.75rem;
   color: grey;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
 }
 .titleSection {
   display: flex;
@@ -295,10 +300,4 @@ body .figCaption {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-}
-.copyright {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 16px;
-  font-size: 0.75rem;
 }
