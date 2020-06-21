@@ -151,6 +151,11 @@ h3 {
     font-size: 2.5rem;
   }
 }
+@media (max-width:800px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
 h4 {
   font-size: 3rem;
   color: #696969;
@@ -225,11 +230,19 @@ h3 .pink {
   flex-direction: column;
   color: #ff1493;
 }
+body {
+  overflow-x: hidden;
+}
 body h2 {
   text-align: center;
   padding: 20px;
 }
 @media (max-width:500px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:800px) {
   body h2 {
     font-size: 2.5rem;
   }
@@ -246,6 +259,12 @@ body .teamPartOne {
     align-items: center;
   }
 }
+@media (max-width:800px) {
+  body .teamPartOne {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body .teamPartTwo {
   display: flex;
   flex-direction: row;
@@ -254,6 +273,13 @@ body .teamPartTwo {
   padding-bottom: 50px;
 }
 @media (max-width:500px) {
+  body .teamPartTwo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+@media (max-width:800px) {
   body .teamPartTwo {
     flex-direction: column;
     align-items: center;
