@@ -1,3 +1,4 @@
+/* Parametric mixins used for title section and team profiles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,11 +197,13 @@ a {
   padding-top: 45px;
   padding-bottom: 16px;
 }
+/* Top of the page has background image, company logo, nav bar that includes mobile/tablet responsive design. Uses Google Keep design as base for reference. */
 header {
   width: 100%;
   height: 60rem;
   background-image: url("/img/wunderlist3-pic-1.jpg");
   background-size: 100% auto;
+  /* Upper top content contains company tagline and call to action button */
 }
 @media (max-width:500px) {
   header {
@@ -217,7 +220,7 @@ header .titleSection {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
+  margin: 0;
   padding: 20px;
 }
 @media (max-width:500px) {
@@ -262,6 +265,7 @@ header .subTitleSection .titleButton {
   margin-top: 30px;
   padding: 16px;
 }
+/* Hides the horizontal bar in the body section. Includes an image and two lines of words that summarize company products. */
 body {
   overflow-x: hidden;
   text-align: center;

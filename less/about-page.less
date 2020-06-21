@@ -1,3 +1,5 @@
+/* Top of the page has company logo and navigation bars, and includes mobile/tablet responsive design */
+
 .titleSection {
   .titleSectionMixin(flex, row, space-between, center, @margin: 0 20px, 20px);
 
@@ -23,6 +25,8 @@
   }
 }
 
+/* Top content sets the company mission statement */
+
 h3 {
   text-align: center;
   padding: 100px;
@@ -38,6 +42,8 @@ h3 {
     flex-direction: column;
   }
 }
+
+/* The Team section is divided into two classes to make two lines on desktop, and single profile on mobile/tablet */
 
 body {
   overflow-x: hidden;
@@ -85,6 +91,8 @@ body {
       padding-top: 10px;
     }
   }
+
+  /* The figure caption is used to set the right name, image and social media links to the respective team members */
 
   .figCaption {
     display: flex;
