@@ -133,14 +133,22 @@ table {
 html {
   font-size: 62.5%;
 }
+header,
+body,
+footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+nav,
+h1,
+h2 {
+  color: #234099;
+}
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #234099;
 }
 h2 {
   font-size: 4rem;
-  color: #234099;
 }
 h3 {
   font-size: 5rem;
@@ -168,20 +176,30 @@ a {
   font-size: 2rem;
   color: #234099;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+.blue {
+  color: #0000ff;
+}
+.pink {
+  color: #ff1493;
+}
+.titleButton {
+  color: white;
+  background-color: #234099;
 }
 .figCaption {
   font-size: 1.5rem;
 }
-footer {
+.copyright {
   font-size: 0.75rem;
   color: grey;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
 }
 header {
   width: 100%;
   height: 60rem;
-  background-image: url('/img/wunderlist3-pic-1.jpg');
+  background-image: url("/img/wunderlist3-pic-1.jpg");
   background-size: 100% auto;
 }
 @media (max-width:500px) {
@@ -210,7 +228,6 @@ header .titleSection {
 header .titleSection nav {
   justify-content: space-evenly;
   align-items: center;
-  color: #234099;
 }
 @media (max-width:500px) {
   header .titleSection nav {
@@ -244,8 +261,6 @@ header .subTitleSection {
 header .subTitleSection .titleButton {
   margin-top: 30px;
   padding: 16px;
-  background-color: #234099;
-  color: #ffffff;
 }
 body {
   overflow-x: hidden;
@@ -267,11 +282,4 @@ body h5 {
   body img {
     width: 100%;
   }
-}
-.copyright {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 16px;
-  font-size: 0.75rem;
-  color: grey;
 }
