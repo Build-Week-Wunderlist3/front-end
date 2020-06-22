@@ -44,6 +44,24 @@ header {
     }
   }
 
+#menu-button {
+
+    z-index: 100;
+
+    @media @mobile {
+        right: 4%;
+    }
+
+    @media @tablet {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        color: @blackFontColor;
+        font-size: 5rem;
+    }
+}
+
+
   /* Upper top content contains company tagline and call to action button */
 
   .subTitleSection {
