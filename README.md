@@ -1,6 +1,6 @@
 **PROJECT TITLE**
 
-#Wunderlist 3.0#
+# Wunderlist 3.0
 
 **MOTIVATION**
 
