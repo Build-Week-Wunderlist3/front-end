@@ -12,13 +12,13 @@ CODE STYLE
 
 **SCREENSHOTS**
 
-![Main Page](/relative/path/to/readme1.png?raw=true "Main Page Top")
+![Main Page](/img/readme1.png "Main Page Top")
 
-![Main Page](/relative/path/to/readme2.png?raw=true "Main Page Bottom")
+![Main Page](/img/readme2.png "Main Page Bottom")
 
-![About Page](/relative/path/to/readme3.png?raw=true "About Page Top")
+![About Page](/img/readme3.png "About Page Top")
 
-![About Page](/relative/path/to/readme1.png?raw=true "About Page Bottom")
+![About Page](/img/readme4.png "About Page Bottom")
 
 TECH/FRAMEWORK USED
 
