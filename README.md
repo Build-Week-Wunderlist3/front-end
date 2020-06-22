@@ -1,6 +1,6 @@
 **PROJECT TITLE**
 
-#Wunderlist 3.0
+#Wunderlist 3.0#
 
 **MOTIVATION**
 
@@ -20,7 +20,7 @@ CODE STYLE
 
 ![About Page](/img/readme4.png "About Page Bottom")
 
-TECH/FRAMEWORK USED
+**TECH/FRAMEWORK USED**
 
 - ES6 JS
 - LESS
@@ -45,6 +45,6 @@ Create a new branch with your first and last name and submit a pull request
 **CREDITS**
 
 - Wunderlist 3.0 Team
-- Friends at Lambda who helped review the code
+- Friends and TLs at Lambda who helped review the code
 
 
