@@ -137,6 +137,7 @@ html {
 header,
 body,
 footer {
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 nav,
@@ -244,6 +245,9 @@ header .titleSection nav a {
   margin: 10px;
   text-decoration: none;
 }
+header .titleSection nav a:hover {
+  color: white;
+}
 header .subTitleSection {
   margin-top: 80px;
   text-align: center;
@@ -265,9 +269,12 @@ header .subTitleSection .titleButton {
   margin-top: 30px;
   padding: 16px;
 }
+header .subTitleSection .titleButton:hover {
+  background-color: #ff1493;
+  color: black;
+}
 /* Hides the horizontal bar in the body section. Includes an image and two lines of words that summarize company products. */
 body {
-  overflow-x: hidden;
   text-align: center;
 }
 body h4 {
