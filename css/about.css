@@ -1,3 +1,4 @@
+/* Parametric mixins used for title section and team profiles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +137,7 @@ html {
 header,
 body,
 footer {
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 nav,
@@ -146,6 +148,12 @@ h2 {
 h1 {
   font-size: 2rem;
   font-weight: bold;
+}
+h1:hover {
+  color: #ff1493;
+}
+.h1Link {
+  text-decoration: none;
 }
 h2 {
   font-size: 4rem;
@@ -189,6 +197,9 @@ a {
 .figCaption {
   font-size: 1.5rem;
 }
+.roundImages {
+  border-radius: 50%;
+}
 .copyright {
   font-size: 0.75rem;
   color: grey;
@@ -196,6 +207,7 @@ a {
   padding-top: 45px;
   padding-bottom: 16px;
 }
+/* Top of the page has company logo and navigation bars, and includes mobile/tablet responsive design */
 .titleSection {
   display: flex;
   flex-direction: row;
@@ -225,6 +237,10 @@ a {
   margin: 10px;
   text-decoration: none;
 }
+.titleSection nav a:hover {
+  color: #ff1493;
+}
+/* Top content sets the company mission statement */
 h3 {
   text-align: center;
   padding: 100px;
@@ -238,8 +254,10 @@ h3 .pink {
   display: flex;
   flex-direction: column;
 }
+/* The Team section is divided into two classes to make two lines on desktop, and single profile on mobile/tablet */
 body {
   overflow-x: hidden;
+  /* The figure caption is used to set the right name, image and social media links to the respective team members */
 }
 body h2 {
   text-align: center;

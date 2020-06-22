@@ -149,6 +149,12 @@ h1 {
   font-size: 2rem;
   font-weight: bold;
 }
+h1:hover {
+  color: #ff1493;
+}
+.h1Link {
+  text-decoration: none;
+}
 h2 {
   font-size: 4rem;
 }
@@ -190,6 +196,9 @@ a {
 }
 .figCaption {
   font-size: 1.5rem;
+}
+.rotated {
+  transform: rotate(45deg);
 }
 .copyright {
   font-size: 0.75rem;
@@ -246,7 +255,7 @@ header .titleSection nav a {
   text-decoration: none;
 }
 header .titleSection nav a:hover {
-  color: white;
+  color: #ff1493;
 }
 header .subTitleSection {
   margin-top: 80px;
