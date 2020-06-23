@@ -16,7 +16,17 @@
       flex-direction: column;
       margin-top: 20px;
       line-height: 0.5;
+    
+    .desktop-nav-items {
+        display: none;
     }
+  }
+
+  @media @tablet {
+      .desktop-nav-items {
+          display: none;
+      }
+  }
 
     a {
       margin: 10px;
@@ -29,6 +39,64 @@
     }
   }
 }
+
+#menu-button {
+    display: none;
+    z-index: 100;
+
+    @media @mobile {
+        right: 4%;
+    }
+
+    @media @tablet {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 4%;
+        color: @blackFontColor;
+        font-size: 2.5rem;
+    }
+}
+
+#x {
+    display: none;
+    z-index: 100;
+
+    @media @tablet {
+        display: none;
+        position: fixed;
+        top: 17px;
+        right: 4.5%;
+        color: @whiteFontColor;
+        font-size: 2.5rem;
+    }
+}
+
+#menu-overlay {
+    display: none;
+    z-index: 99;
+
+    @media @tablet {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: @mainBlueColor;
+            a {
+                font-size: 5rem;
+                line-height: 10rem;
+                color: @whiteFontColor;
+            }
+    }
+}
+
 
 /* Top content sets the company mission statement */
 
@@ -51,7 +119,6 @@ h3 {
 /* The Team section is divided into two classes to make two lines on desktop, and single profile on mobile/tablet */
 
 body {
-  overflow-x: hidden;
 
   h2 {
     text-align: center;

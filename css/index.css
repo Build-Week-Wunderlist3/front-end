@@ -197,8 +197,8 @@ a {
 .figCaption {
   font-size: 1.5rem;
 }
-.rotated {
-  transform: rotate(45deg);
+.roundImages {
+  border-radius: 50%;
 }
 .copyright {
   font-size: 0.75rem;
@@ -249,6 +249,14 @@ header .titleSection nav {
     margin-top: 20px;
     line-height: 0.5;
   }
+  header .titleSection nav .desktop-nav-items {
+    display: none;
+  }
+}
+@media (max-width:800px) {
+  header .titleSection nav .desktop-nav-items {
+    display: none;
+  }
 }
 header .titleSection nav a {
   margin: 10px;
@@ -256,6 +264,64 @@ header .titleSection nav a {
 }
 header .titleSection nav a:hover {
   color: #ff1493;
+}
+header #menu-button {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:500px) {
+  header #menu-button {
+    right: 4%;
+  }
+}
+@media (max-width:800px) {
+  header #menu-button {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    color: black;
+    font-size: 5rem;
+  }
+}
+header #x {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:800px) {
+  header #x {
+    display: none;
+    position: fixed;
+    top: 17px;
+    right: 4.5%;
+    color: white;
+    font-size: 5.5rem;
+  }
+}
+header #menu-overlay {
+  display: none;
+  z-index: 99;
+}
+@media (max-width:800px) {
+  header #menu-overlay {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #234099;
+  }
+  header #menu-overlay a {
+    font-size: 5rem;
+    line-height: 10rem;
+    color: white;
+  }
 }
 header .subTitleSection {
   margin-top: 80px;
@@ -282,7 +348,7 @@ header .subTitleSection .titleButton:hover {
   background-color: #ff1493;
   color: black;
 }
-/* Hides the horizontal bar in the body section. Includes an image and two lines of words that summarize company products. */
+/* Includes an image and two lines of words that summarize company products. */
 body {
   text-align: center;
 }

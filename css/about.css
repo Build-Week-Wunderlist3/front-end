@@ -232,6 +232,14 @@ a {
     margin-top: 20px;
     line-height: 0.5;
   }
+  .titleSection nav .desktop-nav-items {
+    display: none;
+  }
+}
+@media (max-width:800px) {
+  .titleSection nav .desktop-nav-items {
+    display: none;
+  }
 }
 .titleSection nav a {
   margin: 10px;
@@ -239,6 +247,64 @@ a {
 }
 .titleSection nav a:hover {
   color: #ff1493;
+}
+#menu-button {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:500px) {
+  #menu-button {
+    right: 4%;
+  }
+}
+@media (max-width:800px) {
+  #menu-button {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    color: black;
+    font-size: 2.5rem;
+  }
+}
+#x {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:800px) {
+  #x {
+    display: none;
+    position: fixed;
+    top: 17px;
+    right: 4.5%;
+    color: white;
+    font-size: 2.5rem;
+  }
+}
+#menu-overlay {
+  display: none;
+  z-index: 99;
+}
+@media (max-width:800px) {
+  #menu-overlay {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #234099;
+  }
+  #menu-overlay a {
+    font-size: 5rem;
+    line-height: 10rem;
+    color: white;
+  }
 }
 /* Top content sets the company mission statement */
 h3 {
@@ -256,7 +322,6 @@ h3 .pink {
 }
 /* The Team section is divided into two classes to make two lines on desktop, and single profile on mobile/tablet */
 body {
-  overflow-x: hidden;
   /* The figure caption is used to set the right name, image and social media links to the respective team members */
 }
 body h2 {
