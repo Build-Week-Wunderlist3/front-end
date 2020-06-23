@@ -1,3 +1,4 @@
+/* Parametric mixins used for title section and team profiles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,18 +134,43 @@ table {
 html {
   font-size: 62.5%;
 }
+header,
+body,
+footer {
+  max-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+nav,
+h1,
+h2 {
+  color: #234099;
+}
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #234099;
+}
+h1:hover {
+  color: #ff1493;
+}
+.h1Link {
+  text-decoration: none;
 }
 h2 {
   font-size: 4rem;
-  color: #234099;
 }
 h3 {
   font-size: 5rem;
   color: black;
+}
+@media (max-width:500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:800px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   font-size: 3rem;
@@ -158,52 +184,105 @@ a {
   font-size: 2rem;
   color: #234099;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+.blue {
+  color: #0000ff;
+}
+.pink {
+  color: #ff1493;
+}
+.titleButton {
+  color: white;
+  background-color: #234099;
 }
 .figCaption {
   font-size: 1.5rem;
 }
-footer {
+.rotated {
+  transform: rotate(45deg);
+}
+.copyright {
   font-size: 0.75rem;
   color: grey;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
 }
+/* Top of the page has background image, company logo, nav bar that includes mobile/tablet responsive design. Uses Google Keep design as base for reference. */
 header {
   width: 100%;
   height: 60rem;
-  background-image: url('/img/wunderlist3-pic-1.jpg');
+  background-image: url("/img/wunderlist3-pic-1.jpg");
   background-size: 100% auto;
+  /* Upper top content contains company tagline and call to action button */
+}
+@media (max-width:500px) {
+  header {
+    background-size: cover;
+  }
+}
+@media (max-width:800px) {
+  header {
+    background-size: cover;
+  }
 }
 header .titleSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
+  margin: 0;
   padding: 20px;
+}
+@media (max-width:500px) {
+  header .titleSection {
+    flex-direction: column;
+  }
 }
 header .titleSection nav {
   justify-content: space-evenly;
   align-items: center;
-  color: #234099;
+}
+@media (max-width:500px) {
+  header .titleSection nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 0.5;
+  }
 }
 header .titleSection nav a {
   margin: 10px;
   text-decoration: none;
 }
+header .titleSection nav a:hover {
+  color: #ff1493;
+}
 header .subTitleSection {
-  margin-top: 180px;
+  margin-top: 80px;
   text-align: center;
   vertical-align: center;
   align-items: center;
   justify-content: center;
 }
+@media (max-width:800px) {
+  header .subTitleSection {
+    margin-top: 350px;
+  }
+}
+@media (max-width:500px) {
+  header .subTitleSection {
+    margin-top: 275px;
+  }
+}
 header .subTitleSection .titleButton {
   margin-top: 30px;
   padding: 16px;
-  background-color: #234099;
-  color: #ffffff;
 }
+header .subTitleSection .titleButton:hover {
+  background-color: #ff1493;
+  color: black;
+}
+/* Hides the horizontal bar in the body section. Includes an image and two lines of words that summarize company products. */
 body {
   text-align: center;
 }
@@ -214,8 +293,13 @@ body h4 {
 body h5 {
   padding-bottom: 50px;
 }
-footer {
-  text-align: center;
-  padding-top: 45px;
-  padding-bottom: 16px;
+@media (max-width:500px) {
+  body img {
+    width: 100%;
+  }
+}
+@media (max-width:800px) {
+  body img {
+    width: 100%;
+  }
 }
