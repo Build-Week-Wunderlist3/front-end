@@ -43,7 +43,7 @@ export default function Signup() {
           <div className="border">
             <h2>Sign Up</h2>
             <div className="checkIcon">
-              <Link style={{textDecoration:"none"}} to="/">
+              <Link style={{ textDecoration:"none" }} to="/">
                 <img alt="checklist icon" src={listimg}></img>
               </Link>
             </div>
@@ -98,7 +98,7 @@ export default function Signup() {
                 return (
                   messages &&
                   Object.entries(messages).map(([type, message]) => (
-                    <StyledPar key={type}>{message}</StyledPar>
+                    <StyledPar key={ type }>{ message }</StyledPar>
                   ))
                 );
               }}
@@ -127,7 +127,7 @@ export default function Signup() {
                 return (
                   messages &&
                   Object.entries(messages).map(([type, message]) => (
-                    <StyledPar key={type}>{message}</StyledPar>
+                    <StyledPar key={ type }>{ message }</StyledPar>
                   ))
                 );
               }}
@@ -170,7 +170,6 @@ export default function Signup() {
               <button type="button">Login</button>
             </Link>
             <div className="buttonPadding"></div>
-            {/* <button className="loginBtn" type="button">login</button> */}
           </div>
         </div>
       </div>

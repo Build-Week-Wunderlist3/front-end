@@ -16,12 +16,10 @@ const StyledButton = styled.button`
   letter-spacing: 8px;
   color: white;
   background: #00bcff;
-  
 
   &:hover {
     background: cyan;
     transition: 0.3s all;
-    
   }
 
   &:active {
@@ -29,12 +27,10 @@ const StyledButton = styled.button`
     transform: translateY(3px);
     border: 1px solid transparent;
     opacity: 0.8;
-
   }
 
   &:disabled {
     opacity: 0.4;
-  
   }
 `;
 
