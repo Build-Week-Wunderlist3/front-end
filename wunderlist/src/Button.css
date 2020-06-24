@@ -1,0 +1,68 @@
+button[type="submit"],
+button[type="button"],
+input[type="submit"] {
+  background: deepskyblue;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  width: 90%;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 8px;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover,
+input[type="submit"]:hover {
+  background: cyan;
+}
+
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover,
+button[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+button[type="button"] {
+  display: block;
+  -webkit-appearance: none;
+  background: #333;
+  color: white;
+  width: 90%;
+  margin: auto;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  -webkit-appearance: none;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
