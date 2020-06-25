@@ -218,6 +218,10 @@ body {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+
+  @media @mobile {
+    font-size: 2rem;
+  }
 }
 
   .hover-box:hover .hover-box-layer-top, .hover-box-layer-top {
@@ -226,7 +230,7 @@ body {
 
   .hover-box .hover-box-text {
     text-align: center;
-    font-size: 10rem;
+    font-size: 5rem;
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -237,7 +241,7 @@ body {
     transform: translate(-50%, -50%);
   
   @media @mobile {
-    font-size: 5rem;
+    font-size: 2rem;
     border-top: 1px solid rgb(179, 179, 179);
     border-top: 1px solid rgba(179, 179, 179, 0.7);
     margin-top: 5px;
