@@ -47,7 +47,7 @@ export default function Signup() {
                 <img alt="checklist icon" src={listimg}></img>
               </Link>
             </div>
-            <label>Name:</label>
+            {/* <label>Name:</label>
             <input
               name="name"
               id="name"
@@ -73,9 +73,9 @@ export default function Signup() {
                   ))
                 );
               }}
-            </ErrorMessage>
+            </ErrorMessage> */}
 
-            <label>Email:</label>
+            {/* <label>Email:</label>
             <input
               name="email"
               id="email"
@@ -102,7 +102,7 @@ export default function Signup() {
                   ))
                 );
               }}
-            </ErrorMessage>
+            </ErrorMessage> */}
 
             <label>Username:</label>
             <input

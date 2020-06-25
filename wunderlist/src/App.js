@@ -25,7 +25,7 @@ function App() {
   return (
     <body>
       <div className="App">
-        <Header className="siteBanner">Hello</Header>
+        <Header className="siteBanner">Wunderlist</Header>
 
         <Route exact path="/Signup">
           <Signup />
