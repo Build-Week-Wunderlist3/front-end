@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useForm, ErrorMessage } from "react-hook-form";
+import axiosAuth from "./AxiosAuth"
 import styled from "styled-components";
 import listimg from "../src/list.png";
 import "./Signup.css";
@@ -21,6 +22,7 @@ const StyledPar = styled.p`
 `;
 
 export default function Signup() {
+  const history = useHistory();
   const {
     register,
     errors,
@@ -31,9 +33,21 @@ export default function Signup() {
     validateCriteriaMode: "all",
   });
   const onSubmit = (data, e) => {
-    console.log(JSON.stringify(data));
-    e.target.reset();
-  };
+    axiosAuth()
+    .post("api/auth/login/", data)
+    .then(response => {
+      history.push('/Login')
+
+      localStorage.setItem("token", response.data.token)
+
+  })
+
+  console.log(JSON.stringify(data));
+  e.target.reset();
+
+};
+
+
   // const onSubmit = data => console.log(data, "success!");
 
   return (
@@ -75,7 +89,7 @@ export default function Signup() {
               }}
             </ErrorMessage>
 
-            {/* <label>Email:</label>
+            <label>Email:</label>
             <input
               name="email"
               id="email"
@@ -102,7 +116,7 @@ export default function Signup() {
                   ))
                 );
               }}
-            </ErrorMessage> */}
+            </ErrorMessage>
 
             <label>Username:</label>
             <input
