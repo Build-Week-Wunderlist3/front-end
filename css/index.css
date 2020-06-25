@@ -215,6 +215,7 @@ header {
   background-position: center;
   background-image: url("/img/wunderlist3-pic-1.jpg");
   background-size: 100% auto;
+  /* IDs are given for the hamburger menu icon for mobile/tablet designs. */
   /* Upper top content contains company tagline and call to action button */
 }
 @media (max-width:500px) {
@@ -332,7 +333,7 @@ header #menu-overlay {
   }
 }
 header .subTitleSection {
-  margin-top: 80px;
+  margin-top: 150px;
   text-align: center;
   vertical-align: center;
   align-items: center;
@@ -377,6 +378,7 @@ body h5 {
     width: 100%;
   }
 }
+/* Bottom content is an image to market the iOS app with marketing wording on hover. */
 .hover-box,
 .hover-box * {
   box-sizing: border-box;
