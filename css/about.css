@@ -248,6 +248,7 @@ a {
 .titleSection nav a:hover {
   color: #ff1493;
 }
+/* IDs are given for the hamburger menu icon for mobile/tablet designs. */
 #menu-button {
   display: none;
   z-index: 100;
@@ -383,4 +384,10 @@ body .figCaption {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
 }
