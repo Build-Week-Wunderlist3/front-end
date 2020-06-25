@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import styled from "styled-components";
 import Signup from "./Signup";
 import Login from "./Login";
+import Tasks from "./Tasks"
 import Home from "./Home";
 
 
@@ -26,6 +27,10 @@ function App() {
     <body>
       <div className="App">
         <Header className="siteBanner">Wunderlist</Header>
+
+        <Route exact path="/Tasks">
+          <Tasks />
+        </Route>
 
         <Route exact path="/Signup">
           <Signup />

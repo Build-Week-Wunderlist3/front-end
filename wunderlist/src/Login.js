@@ -1,4 +1,6 @@
 import React from "react";
+import Tasks from "./Tasks"
+import axiosAuth from "./AxiosAuth"
 import { useForm, ErrorMessage } from "react-hook-form";
 import listimg from "../src/list.png";
 import { Link } from "react-router-dom";
@@ -31,9 +33,15 @@ export default function Login() {
     validateCriteriaMode: "all",
   });
   const onSubmit = (data, e) => {
+    axiosAuth().post("api/auth/login/", data).then(response => {
+      console.log(response)
+      localStorage.setItem("token", response.data.token)
+    })
     console.log(JSON.stringify(data));
     e.target.reset();
   };
+
+
   // const onSubmit = data => console.log(data, "success!");
 
   return (
@@ -105,12 +113,19 @@ export default function Login() {
                 );
               }}
             </ErrorMessage>
+            
             <button disabled={isSubmitting} type="submit">
               Login
             </button>
+
             <Link style={{textDecoration:"none"}} to="/Signup">
               <button type="button">Sign up</button>
             </Link>
+
+            <Link to="/Tasks">
+            <button type="button">Tasks</button>
+            </Link>
+
             <div className="buttonPadding"></div>
           </div>
         </div>
