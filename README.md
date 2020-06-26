@@ -2,6 +2,8 @@
 
 # Wunderlist 3.0
 
+https://angelyn-liem-build-week-1.netlify.app/
+
 **MOTIVATION**
 
 Wunderlist 3.0 is a cross-collaborative project among Web, iOS, and Data Science students at Lambda School. This project is for Build Week 1.
