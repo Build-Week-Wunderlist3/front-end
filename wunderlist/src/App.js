@@ -26,6 +26,7 @@ function App() {
   return (
     <body>
       <div className="App">
+        
         <Header className="siteBanner">Wunderlist</Header>
 
         <Route exact path="/Tasks">
@@ -43,6 +44,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
+
       </div>
     </body>
   );
