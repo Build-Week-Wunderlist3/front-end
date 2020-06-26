@@ -40,11 +40,11 @@ function Login() {
     .then(response => {
       history.push('/Tasks')
 
-      console.log(response)
+      // console.log(response)
       localStorage.setItem("token", response.data.token)
       
     })
-    console.log(JSON.stringify(data));
+    // console.log(JSON.stringify(data));
     e.target.reset();
     
   };

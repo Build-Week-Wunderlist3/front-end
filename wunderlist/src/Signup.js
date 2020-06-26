@@ -42,7 +42,7 @@ export default function Signup() {
 
   })
 
-  console.log(JSON.stringify(data));
+  // console.log(JSON.stringify(data));
   e.target.reset();
 
 };

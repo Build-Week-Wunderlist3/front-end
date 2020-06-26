@@ -9,7 +9,6 @@ const StyledDiv = styled.div`
   box-shadow: 2px 2px 15px 0px rgba(38, 38, 38, 0.92);
   border-radius: 20px;
   margin: auto;
-
   margin-top: 10px;
   margin-bottom: 5px;
   width: 300px;
@@ -47,12 +46,14 @@ export default function Tasks() {
 
   return (
     <StyledDiv2 className="Task">
-      {data.map((taskData) => {
-        console.log(taskData);
+      {data.map((taskData, i) => {
+        // console.log(taskData);
 
         return (
-          <StyledDiv>
+          <StyledDiv key={i}>
+            
             <StyledPar>
+            
               <br></br>
               <br></br>
               <strong>id: {taskData.id}</strong>
