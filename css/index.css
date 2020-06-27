@@ -150,7 +150,7 @@ h1 {
   font-weight: bold;
 }
 h1:hover {
-  color: #ff1493;
+  color: #00008b;
 }
 .h1Link {
   text-decoration: none;
@@ -272,7 +272,12 @@ header .titleSection nav a {
   text-decoration: none;
 }
 header .titleSection nav a:hover {
-  color: #ff1493;
+  color: #00008b;
+  border: 1px #234099 solid;
+  padding: 5px;
+  border-radius: 25%;
+  background-color: #234099;
+  color: white;
 }
 header #menu-button {
   display: none;
@@ -352,10 +357,11 @@ header .subTitleSection {
 header .subTitleSection .titleButton {
   margin-top: 30px;
   padding: 16px;
+  border-radius: 10%;
 }
 header .subTitleSection .titleButton:hover {
-  background-color: #ff1493;
-  color: black;
+  background-color: #00008b;
+  color: white;
 }
 /* Includes an image and two lines of words that summarize company products. */
 body {
