@@ -391,8 +391,3 @@ body .figCaption {
 .italic {
   font-style: italic;
 }
-#my-pic {
-  width: 95%;
-  height: 85%;
-  object-fit: cover;
-}
