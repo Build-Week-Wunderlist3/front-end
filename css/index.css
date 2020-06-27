@@ -214,22 +214,22 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/img/wunderlist3-pic-1.jpg");
-  background-size: 100% auto;
+  background-size: 100% 100%;
   /* IDs are given for the hamburger menu icon for mobile/tablet designs. */
   /* Upper top content contains company tagline and call to action button */
 }
 @media (max-width:500px) {
   header {
-    background-size: cover;
-    height: 100vh;
+    background-size: 100% 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 @media (max-width:800px) {
   header {
-    background-size: cover;
-    height: 100vh;
+    background-size: 100% 100%;
+    object-fit: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -341,12 +341,12 @@ header .subTitleSection {
 }
 @media (max-width:800px) {
   header .subTitleSection {
-    margin-top: 350px;
+    margin-top: 250px;
   }
 }
 @media (max-width:500px) {
   header .subTitleSection {
-    margin-top: 275px;
+    margin-top: 250px;
   }
 }
 header .subTitleSection .titleButton {
@@ -407,12 +407,17 @@ body h5 {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  font-size: 7.5rem;
+  font-size: 3rem;
   padding: 15px;
   -moz-transition: all 0.4s ease-in-out 0s;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+}
+@media (max-width:500px) {
+  .hover-box .hover-box-layer-top {
+    font-size: 2rem;
+  }
 }
 .hover-box:hover .hover-box-layer-top,
 .hover-box-layer-top {
@@ -420,7 +425,7 @@ body h5 {
 }
 .hover-box .hover-box-text {
   text-align: center;
-  font-size: 10rem;
+  font-size: 5rem;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -432,7 +437,7 @@ body h5 {
 }
 @media (max-width:500px) {
   .hover-box .hover-box-text {
-    font-size: 5rem;
+    font-size: 2rem;
     border-top: 1px solid #b3b3b3;
     border-top: 1px solid rgba(179, 179, 179, 0.7);
     margin-top: 5px;
