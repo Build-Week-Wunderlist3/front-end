@@ -150,7 +150,7 @@ h1 {
   font-weight: bold;
 }
 h1:hover {
-  color: #ff1493;
+  color: #00008b;
 }
 .h1Link {
   text-decoration: none;
@@ -246,7 +246,12 @@ a {
   text-decoration: none;
 }
 .titleSection nav a:hover {
-  color: #ff1493;
+  color: #00008b;
+  border: 1px #234099 solid;
+  padding: 5px;
+  border-radius: 25%;
+  background-color: #234099;
+  color: white;
 }
 /* IDs are given for the hamburger menu icon for mobile/tablet designs. */
 #menu-button {
@@ -338,7 +343,7 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #ff1493;
+  background-color: #00008b;
 }
 /* Add a background color and some padding around the form */
 .contact-form-container {

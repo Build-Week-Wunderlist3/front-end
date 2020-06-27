@@ -33,7 +33,12 @@
         text-decoration: none;
   
         &:hover {
-          color: @missionColorPink; 
+            color: @hoverColor; 
+            border: 1px @mainBlueColor solid;
+            padding: 5px;
+            border-radius: 25%;
+            background-color: @mainBlueColor;
+            color: @whiteFontColor;
       }
   
       }
@@ -126,7 +131,7 @@ input[type=text], select, textarea {
   /* When moving the mouse over the submit button, add a darker green color */
 
   input[type=submit]:hover {
-    background-color: @missionColorPink;
+    background-color: @hoverColor;
   }
   
   /* Add a background color and some padding around the form */
