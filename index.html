@@ -1,40 +1,68 @@
-<!doctype html>
+<!-- Set the format of the page to HTML -->
+
+<!DOCTYPE html>
+
+<!-- Set the language of the page to English -->
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Wunderlist 3.0</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link href="css/index.css" rel="stylesheet">
-</head>
 
-<header>
-    <div class="titleSection">
-        <h1>Wunderlist 3.0</h1>
-        <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
+<!-- Set the page title, viewport meta tag to control layout on mobile browsers, link to the right css page  -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Wunderlist 3.0</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://kit.fontawesome.com/bad9bfb73d.js" crossorigin="anonymous"></script>
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/browser logo.png" type="image/x-icon" />
+  </head>
+
+  <!-- The header sets the page title, navigation bars, the company's marketing tagline, and a call to action button -->
+
+  <header>
+    <div role="menu" class="titleSection">
+        <a href="/index.html" class="h1Link"><h1>Wunderlist 3.0</h1></a>
+        <nav id="desktop-nav">
+            <a class="desktop-nav-items" href="index.html">Home</a>
+            <a class="desktop-nav-items" href="about.html">About</a>
+            <a class="desktop-nav-items" href="contact.html">Contact</a>
+        </nav>
+        <div id="menu-button" class="toggle-menu"><i class="fas fa-bars"></i></div>
+        <div id="x" class="toggle-menu"><i class="fas fa-times"></i></div>
+        <nav id="menu-overlay">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </div>
-    <div class="subTitleSection">
-        <h2>Save your thoughts,</h2>
-        <h2>all in one place</h2>
-        <button class="titleButton">Try Wunderlist 3.0</button>
+
+    <div role="heading" aria-level="2" class="subTitleSection">
+      <h2>Save your thoughts,</h2>
+      <h2>all in one place</h2>
+      <a href="https://wunderlist4.netlify.app/"><button type="button" class="titleButton" title="Try Wunderlist 3.0">Try Wunderlist 3.0</button></a>
     </div>
+  </header>
 
-</header>
+  <!-- The body of the page summarizes what the company does, e.g. products it offers, and the bottom content to showcase the iOS app. -->
 
-
-<body>
-
+  <body>
     <h4>Capture what's on your mind</h4>
     <h5>Add notes, lists, photos, and audio to your Wunderlist 3.0.</h5>
-    <img src="/img/body-index.png"alt="notes, lists, photos, audio options">
+    <img src="/img/body-index.png" alt="notes, lists, photos, audio options" />
 
-    </body>
+    <div role="img" aria-label="iOS app for Wunderlist marketing" class="hover-box">
+      <img src="/img/wunderlist3-pic-3.jpg" alt="iOs app for Wunderlist marketing" class="hover-box-layer-bottom"/>
+      <div class="hover-box-layer-top">
+        <div class="hoverbox-text">Download our iOS app!</div>
+      </div>
+    </div>
 
-<footer>
+  </body>
+
+  <!-- The footer contains a simple copyright -->
+
+  <footer>
     <p class="copyright">&copy; Wunderlist 3.0, 2020</p>
-</footer>
-
-    </html>
+  </footer>
+  <script src = "index.js"></script>
+</html>

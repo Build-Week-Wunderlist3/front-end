@@ -207,71 +207,45 @@ a {
   padding-top: 45px;
   padding-bottom: 16px;
 }
-/* Top of the page has background image, company logo, nav bar that includes mobile/tablet responsive design. Uses Google Keep design as base for reference. */
-header {
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("/img/wunderlist3-pic-1.jpg");
-  background-size: 100% 100%;
-  /* IDs are given for the hamburger menu icon for mobile/tablet designs. */
-  /* Upper top content contains company tagline and call to action button */
-}
-@media (max-width:500px) {
-  header {
-    background-size: 100% 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-@media (max-width:800px) {
-  header {
-    background-size: 100% 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-header .titleSection {
+/* Top of the page has company logo and navigation bars, and includes mobile/tablet responsive design */
+.titleSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: 0 20px;
   padding: 20px;
 }
 @media (max-width:500px) {
-  header .titleSection {
+  .titleSection {
     flex-direction: column;
   }
 }
-header .titleSection nav {
+.titleSection nav {
   justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width:500px) {
-  header .titleSection nav {
+  .titleSection nav {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     line-height: 0.5;
   }
-  header .titleSection nav .desktop-nav-items {
+  .titleSection nav .desktop-nav-items {
     display: none;
   }
 }
 @media (max-width:800px) {
-  header .titleSection nav .desktop-nav-items {
+  .titleSection nav .desktop-nav-items {
     display: none;
   }
 }
-header .titleSection nav a {
+.titleSection nav a {
   margin: 10px;
   text-decoration: none;
 }
-header .titleSection nav a:hover {
+.titleSection nav a:hover {
   color: #00008b;
   border: 1px #234099 solid;
   padding: 5px;
@@ -279,45 +253,46 @@ header .titleSection nav a:hover {
   background-color: #234099;
   color: white;
 }
-header #menu-button {
+/* IDs are given for the hamburger menu icon for mobile/tablet designs. */
+#menu-button {
   display: none;
   z-index: 100;
 }
 @media (max-width:500px) {
-  header #menu-button {
+  #menu-button {
     right: 4%;
   }
 }
 @media (max-width:800px) {
-  header #menu-button {
+  #menu-button {
     display: flex;
     position: absolute;
     top: 20px;
     right: 4%;
     color: #234099;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
 }
-header #x {
+#x {
   display: none;
   z-index: 100;
 }
 @media (max-width:800px) {
-  header #x {
+  #x {
     display: none;
     position: fixed;
     top: 17px;
     right: 4.5%;
     color: white;
-    font-size: 2.755rem;
+    font-size: 2.5rem;
   }
 }
-header #menu-overlay {
+#menu-overlay {
   display: none;
   z-index: 99;
 }
 @media (max-width:800px) {
-  header #menu-overlay {
+  #menu-overlay {
     display: none;
     position: fixed;
     flex-direction: column;
@@ -331,123 +306,48 @@ header #menu-overlay {
     z-index: 99;
     background-color: #234099F2;
   }
-  header #menu-overlay a {
+  #menu-overlay a {
     font-size: 4rem;
     line-height: 8rem;
     color: white;
   }
 }
-header .subTitleSection {
-  margin-top: 150px;
-  text-align: center;
-  vertical-align: center;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width:800px) {
-  header .subTitleSection {
-    margin-top: 250px;
-  }
-}
-@media (max-width:500px) {
-  header .subTitleSection {
-    margin-top: 250px;
-  }
-}
-header .subTitleSection .titleButton {
-  margin-top: 30px;
-  padding: 16px;
-  border-radius: 10%;
-}
-header .subTitleSection .titleButton:hover {
-  background-color: #00008b;
-  color: white;
-}
-/* Includes an image and two lines of words that summarize company products. */
-body {
-  text-align: center;
-}
-body h4 {
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-body h5 {
-  padding-bottom: 50px;
-}
-@media (max-width:500px) {
-  body img {
-    width: 100%;
-  }
-}
-@media (max-width:800px) {
-  body img {
-    width: 100%;
-  }
-}
-/* Bottom content is an image to market the iOS app with marketing wording on hover. */
-.hover-box,
-.hover-box * {
-  box-sizing: border-box;
-}
-.hover-box {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  max-width: 100%;
-  height: auto;
-}
-.hover-box img {
-  max-width: 100%;
-}
-.hover-box .hover-box-layer-bottom {
-  display: block;
-}
-.hover-box .hover-box-layer-top {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  font-size: 3rem;
-  padding: 15px;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -ms-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
 }
-@media (max-width:500px) {
-  .hover-box .hover-box-layer-top {
-    font-size: 2rem;
-  }
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #234099;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.hover-box:hover .hover-box-layer-top,
-.hover-box-layer-top {
-  opacity: 1;
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #00008b;
 }
-.hover-box .hover-box-text {
-  text-align: center;
-  font-size: 5rem;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-@media (max-width:500px) {
-  .hover-box .hover-box-text {
-    font-size: 2rem;
-    border-top: 1px solid #b3b3b3;
-    border-top: 1px solid rgba(179, 179, 179, 0.7);
-    margin-top: 5px;
-    padding-top: 2px;
-    display: none;
-  }
+/* Add a background color and some padding around the form */
+.contact-form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

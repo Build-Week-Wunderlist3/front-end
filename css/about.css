@@ -1,3 +1,4 @@
+/* Parametric mixins used for title section and team profiles */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,18 +134,43 @@ table {
 html {
   font-size: 62.5%;
 }
+header,
+body,
+footer {
+  max-width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+nav,
+h1,
+h2 {
+  color: #234099;
+}
 h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #234099;
+}
+h1:hover {
+  color: #00008b;
+}
+.h1Link {
+  text-decoration: none;
 }
 h2 {
   font-size: 4rem;
-  color: #234099;
 }
 h3 {
   font-size: 5rem;
   color: black;
+}
+@media (max-width:500px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:800px) {
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 h4 {
   font-size: 3rem;
@@ -158,23 +184,30 @@ a {
   font-size: 2rem;
   color: #234099;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+.blue {
+  color: #0000ff;
+}
+.pink {
+  color: #ff1493;
+}
+.titleButton {
+  color: white;
+  background-color: #234099;
 }
 .figCaption {
   font-size: 1.5rem;
 }
-footer {
-  font-size: 0.75rem;
-  color: grey;
+.roundImages {
+  border-radius: 50%;
 }
 .copyright {
+  font-size: 0.75rem;
+  color: grey;
   text-align: center;
   padding-top: 45px;
   padding-bottom: 16px;
-  font-size: 0.75rem;
-  color: grey;
 }
+/* Top of the page has company logo and navigation bars, and includes mobile/tablet responsive design */
 .titleSection {
   display: flex;
   flex-direction: row;
@@ -183,15 +216,103 @@ footer {
   margin: 0 20px;
   padding: 20px;
 }
+@media (max-width:500px) {
+  .titleSection {
+    flex-direction: column;
+  }
+}
 .titleSection nav {
   justify-content: space-evenly;
   align-items: center;
-  color: #234099;
+}
+@media (max-width:500px) {
+  .titleSection nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: 0.5;
+  }
+  .titleSection nav .desktop-nav-items {
+    display: none;
+  }
+}
+@media (max-width:800px) {
+  .titleSection nav .desktop-nav-items {
+    display: none;
+  }
 }
 .titleSection nav a {
   margin: 10px;
   text-decoration: none;
 }
+.titleSection nav a:hover {
+  color: #00008b;
+  border: 1px #234099 solid;
+  padding: 5px;
+  border-radius: 25%;
+  background-color: #234099;
+  color: white;
+}
+/* IDs are given for the hamburger menu icon for mobile/tablet designs. */
+#menu-button {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:500px) {
+  #menu-button {
+    right: 4%;
+  }
+}
+@media (max-width:800px) {
+  #menu-button {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 4%;
+    color: #234099;
+    font-size: 2.5rem;
+  }
+}
+#x {
+  display: none;
+  z-index: 100;
+}
+@media (max-width:800px) {
+  #x {
+    display: none;
+    position: fixed;
+    top: 17px;
+    right: 4.5%;
+    color: white;
+    font-size: 2.5rem;
+  }
+}
+#menu-overlay {
+  display: none;
+  z-index: 99;
+}
+@media (max-width:800px) {
+  #menu-overlay {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: #234099F2;
+  }
+  #menu-overlay a {
+    font-size: 4rem;
+    line-height: 8rem;
+    color: white;
+  }
+}
+/* Top content sets the company mission statement */
 h3 {
   text-align: center;
   padding: 100px;
@@ -200,22 +321,46 @@ h3 {
 h3 .blue {
   display: flex;
   flex-direction: column;
-  color: #0000ff;
 }
 h3 .pink {
   display: flex;
   flex-direction: column;
-  color: #ff1493;
+}
+/* The Team section is divided into two classes to make two lines on desktop, and single profile on mobile/tablet */
+body {
+  /* The figure caption is used to set the right name, image and social media links to the respective team members */
 }
 body h2 {
   text-align: center;
   padding: 20px;
+}
+@media (max-width:500px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width:800px) {
+  body h2 {
+    font-size: 2.5rem;
+  }
 }
 body .teamPartOne {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 50px;
+}
+@media (max-width:500px) {
+  body .teamPartOne {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width:800px) {
+  body .teamPartOne {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body .teamPartTwo {
   display: flex;
@@ -224,10 +369,30 @@ body .teamPartTwo {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+@media (max-width:500px) {
+  body .teamPartTwo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
+@media (max-width:800px) {
+  body .teamPartTwo {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+}
 body .figCaption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
 }

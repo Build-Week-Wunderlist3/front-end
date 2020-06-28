@@ -1,55 +1,99 @@
 /*GENERAL STYLES*/
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
+}
+
+header,
+body,
+footer {
+    max-width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+nav,
+h1,
+h2 {
+  color: @mainBlueColor;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #234099;
+  font-size: 2rem;
+  font-weight: bold;
+
+  &:hover {
+    color: @hoverColor;
+}
+}
+
+.h1Link {
+    text-decoration: none;
 }
 
 h2 {
-    font-size: 4rem;
-    color: #234099;
+  font-size: 4rem;
 }
 
 h3 {
-    font-size: 5rem;
-    color: black;
+  font-size: 5rem;
+  color: @blackFontColor;
+
+  @media @mobile {
+    font-size: 2.5rem;
+  }
+
+  @media @tablet {
+    font-size: 2.5rem;
+  }
 }
 
 h4 {
-    font-size: 3rem;
-    color: #696969;
+  font-size: 3rem;
+  color: @greyFontColor;
 }
 
 h5 {
-    font-size: 1.5rem;
-    color: grey;
+  font-size: 1.5rem;
+  color: @subtitleGreyColor;
 }
 
 a {
-    font-size: 2rem;
-    color: #234099;
+  font-size: 2rem;
+  color: @mainBlueColor;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-  }
+.blue {
+  color: @missionColorBlue;
+}
 
-  .figCaption {
-      font-size: 1.5rem;
-  }
+.pink {
+  color: @missionColorPink;
+}
 
-  footer {
-      font-size: 0.75rem;
-      color: grey;
-  }
+.titleButton {
+  color: @whiteFontColor;
+  background-color: @mainBlueColor;
+}
+
+.figCaption {
+  font-size: 1.5rem;
+}
+
+.roundImages {
+    border-radius: 50%;
+
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: @copyrightGreyColor;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 16px;
+}

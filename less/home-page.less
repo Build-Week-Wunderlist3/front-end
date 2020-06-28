@@ -1,12 +1,257 @@
-body {
+/* Top of the page has background image, company logo, nav bar that includes mobile/tablet responsive design. Uses Google Keep design as base for reference. */
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/img/wunderlist3-pic-1.jpg");
+  background-size: 100% 100%;
+
+  @media @mobile {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media @tablet {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .titleSection {
+    .titleSectionMixin(flex, row, space-between, center, 0, 20px);
+
+    @media @mobile {
+      flex-direction: column;
+    }
+
+    nav {
+      justify-content: space-evenly;
+      align-items: center;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        line-height: 0.5;
+
+        .desktop-nav-items {
+            display: none;
+        }
+      }
+
+      @media @tablet {
+          .desktop-nav-items {
+              display: none;
+          }
+      }
+
+      a {
+        margin: 10px;
+        text-decoration: none;
+
+        &:hover {
+            color: @hoverColor; 
+            border: 1px @mainBlueColor solid;
+            padding: 5px;
+            border-radius: 25%;
+            background-color: @mainBlueColor;
+            color: @whiteFontColor;
+        }
+
+      }
+    }
+  }
+
+  /* IDs are given for the hamburger menu icon for mobile/tablet designs. */
+
+  #menu-button {
+      display: none;
+      z-index: 100;
+
+      @media @mobile {
+          right: 4%;
+      }
+
+      @media @tablet {
+          display: flex;
+          position: absolute;
+          top: 20px;
+          right: 4%;
+          color: @mainBlueColor;
+          font-size: 2.75rem;
+      }
+  }
+
+  #x {
+      display: none;
+      z-index: 100;
+
+      @media @tablet {
+          display: none;
+          position: fixed;
+          top: 17px;
+          right: 4.5%;
+          color: @whiteFontColor;
+          font-size: 2.755rem;
+      }
+  }
+
+  #menu-overlay {
+      display: none;
+      z-index: 99;
+
+      @media @tablet {
+          display: none;
+          position: fixed;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0px;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 99;
+          background-color: #234099F2;
+              a {
+                  font-size: 4rem;
+                  line-height: 8rem;
+                  color: @whiteFontColor;
+              }
+      }
+  }
+
+
+
+  /* Upper top content contains company tagline and call to action button */
+
+  .subTitleSection {
+    margin-top: 150px;
     text-align: center;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
 
-    h4 {
-        padding-top: 30px;
-        padding-bottom: 15px;
+    @media @tablet {
+      margin-top: 250px;
     }
 
-    h5 {
-        padding-bottom: 50px;
+    @media @mobile {
+      margin-top: 250px;
     }
+
+    .titleButton {
+      margin-top: 30px;
+      padding: 16px;
+      border-radius: 10%;
+
+      &:hover {
+          background-color: @hoverColor;
+          color: @whiteFontColor;
+      }
+
+
+
+    }
+  }
 }
+
+/* Includes an image and two lines of words that summarize company products. */
+
+body {
+  text-align: center;
+
+  h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  h5 {
+    padding-bottom: 50px;
+  }
+
+  img {
+    @media @mobile {
+      width: 100%;
+    }
+    @media @tablet {
+      width: 100%;
+    }
+  }
+}
+
+/* Bottom content is an image to market the iOS app with marketing wording on hover. */
+
+.hover-box, .hover-box * {
+  box-sizing: border-box;
+}
+
+.hover-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.hover-box img {
+  max-width: 100%;
+}
+
+.hover-box .hover-box-layer-bottom {
+  display: block;
+}
+
+.hover-box .hover-box-layer-top {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 3rem;
+  padding: 15px;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+
+  @media @mobile {
+    font-size: 2rem;
+  }
+}
+
+  .hover-box:hover .hover-box-layer-top, .hover-box-layer-top {
+    opacity: 1;
+  }
+
+  .hover-box .hover-box-text {
+    text-align: center;
+    font-size: 5rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  
+  @media @mobile {
+    font-size: 2rem;
+    border-top: 1px solid rgb(179, 179, 179);
+    border-top: 1px solid rgba(179, 179, 179, 0.7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none;
+  }
+  }
